@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
     <title>THE CODE REVIEW</title>
 </head>
 
 
 <body>
   <header>
-    <h1>THE CODE REVIEW</h1>
-    <h2>Signup for our newsletter</h2>
+    <h2>THE CODE REVIEW</h2>
+    <h3>Signup for our newsletter</h3>
     <p>Get the latest news on how your code is doing right in your inbox</p>
   </header>
   
-  <form>
+  <form action="index.html" method="post">
       <fieldset>
           <legend>Contact information</legend>
 
           <label for="name">Full Name</label>
-          <input type="text" id="name" name="user_name">
+          <input type="text" id="name" name="user_name" placeholder="Required">
 
           <label for="mail">Email Address</label>
-          <input type="email" id="mail" name="user_email">
+          <input type="email" id="mail" name="user_email" placeholder="Required">
 
           <label for="phone">Phone Number</label>
           <input type="tel" id="phone" name="user_telephone">
@@ -33,8 +37,9 @@
           <label for="city">City</label>
           <input type="text" id="city" name="user_city">
 
-          <label for="state">State</label>
+          <label for="state">State</label><br>
           <select id="state" name="user_state">
+                <option value="" disabled selected hidden>Choose State</option>
                 <option value="alabama">Alabama</option>
                 <option value="alaska">Alaska</option>
                 <option value="arizona">Arizona</option>
@@ -85,7 +90,7 @@
                 <option value="west-virginia">West Virginia</option>
                 <option value="wisconsin">Wisconsin</option>
                 <option value="wyoming">Wyoming</option>
-          </select>
+          </select><br>
 
           <label for="zip">Zip Code</label>
           <input type="text" id="zip" name="user_zip-code">
@@ -94,14 +99,14 @@
       <fieldset>
           <legend>Newsletter</legend>
 
-          <p>Select the newsletters you would like to recieve</p>
-          <input type="checkbox" id="html-news" value="news_letters" name="user_news-letters"><label for="html-news">HTML News</label>
-          <input type="checkbox" id="css-news" value="news_letters" name="user_news-letters"><label for="css-news">CSS News</label>
-          <input type="checkbox" id="javascript-news" value="news_letters" name="user_news-letters"><label for="javascript-news">Javascript News</label>
+          <label>the newsletters you would like to recieve</label><br>
+          <input type="checkbox" id="html-news" value="news_letters" name="user_news-letters"><label for="html-news">HTML News</label><br>
+          <input type="checkbox" id="css-news" value="news_letters" name="user_news-letters"><label for="css-news">CSS News</label><br>
+          <input type="checkbox" id="javascript-news" value="news_letters" name="user_news-letters"><label for="javascript-news">Javascript News</label><br>
 
-          <p>Newsletter format</p>
-          <input type="radio" id="html-format" value="html-format" name="user_format"><label for="html-format">HTML</label>
-          <input type="radio" id="plain-format" value="plain-format" name="user_format"><label for="plain-format">Plain text</label>
+          <label>Newsletter format</label><br>
+          <input type="radio" id="html-format" value="html-format" name="user_format"><label for="html-format">HTML</label><br>
+          <input type="radio" id="plain-format" value="plain-format" name="user_format"><label for="plain-format">Plain text</label><br>
 
           <label for="request">Other topics you'd like to hear about</label>
           <textarea id="request" name="user_request"></textarea>
