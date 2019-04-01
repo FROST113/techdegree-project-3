@@ -3,6 +3,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+/* Mobile Layout 320px */
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -68,23 +69,31 @@ select {
   font-size: 16px;
   height: auto;
   margin: 0;
-  outline: 0;
+  outline: none;
   padding: 15px;
   width: 100%;
   background-color: #e8eeef;
   color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  box-shadow: 0 510px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-textarea,
-select:focus {
-    color: grey;
+#zip {
+    width: 60%;
 }
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+textarea:focus {
+    border: 1px solid rgb(36, 35, 35);
+    transition: all .5s ease-in-out;
+   
+}
+
 
 button {
     padding: 19px 39px 18px 39px;
@@ -112,12 +121,17 @@ select {
     border-radius: 2px;
   }
 
+  textarea {
+      width: 100%;
+      height: 150px;
+  }
+
   
 label {
     display: inline-block;
     margin-bottom: 8px;
     margin-top: 10px;
-    font-size: 13px;
+    font-size: 16px;
   }
 
 
@@ -131,3 +145,53 @@ label {
       font-size: 13px;
       
   }
+
+  .NewsLetter {
+      border-top: solid 3px black;
+      max-width: 100%;
+      padding-right: 160px;
+      
+  }
+
+  /* Tablet/Desktop Layout 768px  */
+
+  @media (min-width:768px) {
+     h2 {
+         text-align: center;
+         margin: 0 auto;
+         max-width: 100%;
+     }
+     
+
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+      
+      .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .container {
+        border-radius: 5px;
+        background-color: whitesmoke;
+        padding: 20px;
+  }
+
+  .NewsLetter {
+      padding-right: 569px
+  }
+
+  #zip {
+      width: 30%;
+  }
+}

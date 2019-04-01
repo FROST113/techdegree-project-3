@@ -12,32 +12,57 @@
 
 
 <body>
+    <div class="container">
   <header>
     <h2>THE CODE REVIEW</h2>
     <h3>Signup for our newsletter</h3>
     <p>Get the latest news on how your code is doing right in your inbox</p>
   </header>
   
+  
   <form action="index.html" method="post">
       <fieldset>
           <legend><strong>Contact information</strong></legend>
-
+      <div class="row">
+        <div class="col-25">
           <label for="name">Full Name</label>
-          <input type="text" id="name" name="user_name" placeholder="Required">
+        </div>
+        <div class="col-75">
+          <input type="text" id="name" name="user_name" placeholder="Required" required>
+        </div>
 
+        <div class="col-25">
           <label for="mail">Email Address</label>
-          <input type="email" id="mail" name="user_email" placeholder="Required">
+        </div>
+        <div class="col-75">
+          <input type="email" id="mail" name="user_email" placeholder="Required" required>
+        </div>
 
+        <div class="col-25">
           <label for="phone">Phone Number</label>
+        </div>
+        <div class="col-75">
           <input type="tel" id="phone" name="user_telephone" placeholder="e.g. (555)-555-555 ">
+        </div>
 
+        <div class="col-25">
           <label for="street">Street Address</label>
+        </div>
+        <div class="col-75">
           <input type="text" id="street" name="user_address" placeholder="e.g. 22 Main Street">
+        </div>
 
+        <div class="col-25">
           <label for="city">City</label>
+        </div>
+        <div class="col-75">
           <input type="text" id="city" name="user_city" placeholder="e.g. Detroit">
+        </div>
 
+        <div class="col-25">
           <label for="state">State</label><br>
+        </div>
+        <div class="col-75">
           <select id="state" name="user_state">
                 <option value="" disabled selected hidden>Choose State</option>
                 <option value="alabama">Alabama</option>
@@ -91,10 +116,15 @@
                 <option value="wisconsin">Wisconsin</option>
                 <option value="wyoming">Wyoming</option>
           </select><br>
+        </div>
 
-          <label for="zip">Zip Code</label>
-          <input type="text" id="zip" name="user_zip-code" pattern="[0-9]" placeholder="e.g. 0123"    >
-
+        <div class="col-25">
+          <label for="zip">Zip Code</label><br>
+        </div>
+        <div class="col-75">
+          <input type="text" id="zip" name="user_zip-code" pattern="[0-9]" placeholder="e.g. 0123">
+        </div>
+        </div>
       </fieldset>
       <fieldset>
           <legend class="NewsLetter"><strong>Newsletter</strong></legend>
@@ -113,10 +143,12 @@
       </fieldset>
 
       <button type="submit">Sign up</button>
+    
   </form>
 
   <footer>
-    <p>Copyright the Code Review</p>
+    <p><i>Copyright the Code Review</i></p>
   </footer>
+</div>
 </body>
 </html>
