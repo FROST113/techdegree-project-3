@@ -153,13 +153,18 @@ label {
       
   }
 
+  .container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
   /* Tablet/Desktop Layout 768px  */
 
   @media (min-width:768px) {
      h2 {
          text-align: center;
          margin: 0 auto;
-         max-width: 100%;
+         max-width: 768px;
      }
      
 
@@ -182,13 +187,15 @@ label {
       }
 
       .container {
+        max-width: 768px;
+        margin: 0 auto;
         border-radius: 5px;
         background-color: whitesmoke;
         padding: 20px;
   }
 
   .NewsLetter {
-      padding-right: 569px
+      padding-right: 569px;
   }
 
   #zip {
