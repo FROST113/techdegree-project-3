@@ -82,6 +82,8 @@ select {
     width: 60%;
 }
 
+
+
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -89,8 +91,9 @@ input[type="tel"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus,
 textarea:focus {
-    border: 1px solid rgb(36, 35, 35);
-    transition: all .5s ease-in-out;
+    border: 2px solid rgb(0, 0, 0);
+    transition-duration: 0.5s;
+    border-radius: 1em;
    
 }
 
